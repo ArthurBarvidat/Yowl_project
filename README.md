@@ -1,41 +1,41 @@
-# Yowl — Social App for Gamers (Product Design + MVP)
+# Yowl — Application Sociale pour Gamers (Product Design + MVP)
 
-A social web application designed for gamers, allowing users to publish and interact with short content. Built following a full product design process: user research, personas, wireframes, mockups, prototype, user testing, and MVP development.
+Application web sociale conçue pour les joueurs, permettant de publier et d'interagir avec du contenu court. Réalisée en suivant un processus complet de product design : recherche utilisateur, personas, wireframes, maquettes, prototype, tests utilisateurs et développement MVP.
 
-## What it does
+## Fonctionnalités
 
-Yowl is a gaming-focused social platform where users can:
-- Create an account and log in
-- Publish posts (text, reactions)
-- Browse a global feed and game-specific feeds (League of Legends, Valorant, etc.)
-- Find and follow other players ("mates")
-- Chat in rank-based global chatrooms (Gold, Platinum, etc.)
+Yowl est une plateforme sociale orientée gaming où les utilisateurs peuvent :
+- Créer un compte et se connecter
+- Publier des posts (texte, réactions)
+- Parcourir un fil global et des fils par jeu (League of Legends, Valorant, etc.)
+- Trouver et suivre d'autres joueurs ("mates")
+- Discuter dans des salons globaux par rang (Gold, Platine, etc.)
 
-## Repository structure
+## Structure du projet
 
 ```
 ├── docs/
-│   ├── 01_research/        # Benchmark, interviews, problem statement, objectives
-│   ├── 02_personas/        # User personas (casual gamer, competitive player, parents)
-│   ├── 03_user_journey/    # Main usage scenario with friction points
-│   ├── 04_wireframes/      # Low-fidelity wireframes (PDF)
-│   ├── 05_mockups/         # High-fidelity mockups with design justifications
-│   ├── 06_prototype/       # Clickable prototype description and screenshots
-│   ├── 07_feedback/        # User testing protocol and feedback summary
-│   ├── 08_prioritization/  # MoSCoW matrix and MVP definition
-│   └── 09_pitch/           # (pitch deck folder)
+│   ├── 01_research/        # Benchmark, interviews, problématique, objectifs
+│   ├── 02_personas/        # Personas (joueur casual, joueur compétitif, parents)
+│   ├── 03_user_journey/    # Scénario principal avec points de friction
+│   ├── 04_wireframes/      # Wireframes basse fidélité (PDF)
+│   ├── 05_mockups/         # Maquettes haute fidélité avec justifications design
+│   ├── 06_prototype/       # Description du prototype cliquable et captures
+│   ├── 07_feedback/        # Protocole de test et synthèse des retours
+│   ├── 08_prioritization/  # Matrice MoSCoW et définition du MVP
+│   └── 09_pitch/           # Dossier pitch
 └── mvp/
-    └── yowl/               # Next.js MVP source code
+    └── yowl/               # Code source MVP Next.js
 ```
 
-## MVP — Tech stack
+## Stack technique — MVP
 
-- **Frontend**: Next.js (React), Tailwind CSS
-- **Backend**: Next.js API Routes
-- **Database**: MongoDB (via Mongoose)
-- **Deployment**: local (`npm run dev`)
+- **Frontend** : Next.js (React), Tailwind CSS
+- **Backend** : Next.js API Routes
+- **Base de données** : MongoDB (via Mongoose)
+- **Médias** : Cloudinary (upload d'images)
 
-## Run the MVP locally
+## Lancer le MVP en local
 
 ```bash
 cd mvp/yowl
@@ -43,27 +43,27 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Puis ouvrir [http://localhost:3000](http://localhost:3000).
 
-You need a `.env.local` file with your MongoDB connection string:
+Fichier `.env.local` requis avec la chaîne de connexion MongoDB :
 
 ```
 MONGODB_URI=your_mongodb_connection_string
 ```
 
-## Product Design process
+## Processus de Product Design
 
-This project followed a structured UX process:
+Ce projet suit une démarche UX structurée :
 
-1. **Research** — benchmarked existing platforms, interviewed classmates to identify needs
-2. **Personas** — 3 user profiles (casual gamer, competitive player, parents/supervisors)
-3. **User journey** — mapped the main flow with friction points
-4. **Wireframes & Mockups** — low and high fidelity screens designed in Figma
-5. **Prototype** — clickable prototype tested with peers
-6. **Feedback** — collected from 3-5 testers, iterated on pain points
-7. **Prioritization** — MoSCoW matrix to define MVP scope
-8. **MVP** — implemented the core user flow
+1. **Recherche** — benchmark des plateformes existantes, interviews pour identifier les besoins
+2. **Personas** — 3 profils utilisateurs (joueur casual, joueur compétitif, parents/superviseurs)
+3. **User Journey** — cartographie du parcours principal avec points de friction
+4. **Wireframes & Maquettes** — écrans basse et haute fidélité conçus sur Figma
+5. **Prototype** — prototype cliquable testé avec des pairs
+6. **Feedback** — collecte auprès de 3 à 5 testeurs, itérations sur les points de douleur
+7. **Priorisation** — matrice MoSCoW pour définir le périmètre du MVP
+8. **MVP** — implémentation du parcours utilisateur principal
 
-## Project context
+## Contexte du projet
 
-Built as part of an Epitech Product Design project. The focus was on the design process and methodology, not just the final product.
+Réalisé dans le cadre du module Product Design Epitech. L'accent est mis sur la démarche et la méthodologie design, pas seulement sur le produit final.
